@@ -18,9 +18,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 						\n- Relationships 
 						\n- Self Improvement 
 						\n 
-						\n Get better every day: https://jamesclear.com/continuous-improvement`,
-                from: '+12694754126', // my twilio testing number
-                to: `+1${myCellPhoneNumber}`
+						\n Get better every day: https://nextjs-cron-test.vercel.app/`,
+                from: '+12762925601', // my twilio testing number
+                to: `+234${myCellPhoneNumber}`
             })
             .then((message: String) => res.json(message), (err: Error) => res.json(err));
     } else {
